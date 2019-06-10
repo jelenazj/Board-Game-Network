@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+
+#hide {
+    display: none;
+}
+#dashHeader {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(90deg, #ffffff, #959595);
+    z-index: -1;
+    border: 2px solid blue;
+}
+
+.logoheader {
+    border: 3px solid orange;
+    height: 60px;
+    padding: 10;
+    vertical-align: middle;
+}
+
+.book {
+    margin-top: 0;
+    transform-style: preserve-3d;
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backface-visibility: hidden;
+    border: 3px solid red;
+    align-self: end;
+    margin: auto; 
+    z-index: 5;
+}
+
+.front, .back, .page3, .page6 {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 0; left: 0;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.front, .back {
+    background: #FEBA4D;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.back {
+    background: transparent;
+}
+
+.front, .page3 {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.back, .page6 {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+.page3 {
+    background: #fdfdfd;
+    text-align: center;
+    margin-top: 0;
+}
+
+.page6 {
+    background: #fdfdfd;
+    text-align: center;
+    overflow:hidden;
+    z-index: -4;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transform-origin: 50% 50%;
+    transition: opacity 5s;
+}
+
+.book:hover .page3 {
+    transform: rotateY(-20deg);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+
+.book:hover .page6 {
+    opacity: 1;
+    transition: opacity 0.5s;
+    z-index: 10000;
+}
+
+.book:hover .front {
+    transform: rotateY(-150deg);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .back {
+    transform: rotateY(-20deg) scale(1.1);
+}
+
+input[name=username]:hover ~ .back {
+    display: none;
+}
+input[type=password] {
+    width: 85%;
+}
+
+#btnControl {
+    display: none;
+}
+.front {
+    z-index: 99999;
+}
+
+h6{margin:5px; color: #ccc;}
+
+.logoheader {
+    align-self: flex-start;
+}
+
+.book {
+    align-self: flex-end;
+}
+
+/* kreja header*/
+
+.link {
+        margin: auto;
+        padding: 10px;
+        background: orange;
+        border-radius: 25px;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      
+    
+}
+
+#welcomeText {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#scrollIcon {
+            padding-bottom: 15px;
+        }
+
+a:hover{
+       background-color: darkorange;
+}
+.footer {
+       
+       background-color: white;
+       text-align: center;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       display: flex;  
+}
+
+footer {
+    margin-bottom: 0;
+}
+.about{
+        font-size: 24px;
+}
+.image{
+        font-size: 25px;
+        text-align: center;
+        color: orange;
+        margin-top: 100px;
+}
+#forma{
+        display: none;
+        max-width: 350px;
+        border-radius: 20px;
+        margin:auto;
+        background: rgba(0,0,0,0.8);
+        box-sizing: border-box;
+        padding: 30px;
+        color: white;
+        overflow: auto;
+        margin-top: -70px;
+    }
+h2{
+        text-align: center;
+        color: #fda314;
+        font-size: 40px;
+    }
+.unos{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 5px;
+        background: rgba(0,0,0,0.10);
+        outline: none;
+        border: none;
+        border-bottom: 1px dotted white;
+        color:white;
+        border-radius: 5px;
+        margin: 5px;
+        font-weight: bold;
+    }
+.posalji{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        margin-top: 30px;
+        outline: none;
+        border: none;
+        background: #fda314;
+        opacity: 0.7;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+    }
+input[type=submit]:hover{
+        background: black;
+        opacity: 0.7;
+    }
+.close {
+        position: absolute;
+        right: 37%;
+        top: 50px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+.close:hover,
+.close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    } 
+   
+@media screen and (max-width: 200px) {
+
+.logoheader {
+    width: 50%;
+}
+    
+ .signupbtn {
+         width: 100%;
+  }
+}
+#singup{
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+        padding: 20px;
+        outline: none;
+        border: none;
+        background: #fda314;
+        opacity: 0.7;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+    }
+.container{
+       position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+}
+main {
+
+    background-image: linear-gradient(
+        90deg, 
+        rgba(255,255,255,0.4) 0%,
+        rgba(255,255,255,0.4) 100%
+        ),
+        url("../img/slika.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    z-index: -1;
+    }
+h1{
+    color: darkorange;
+    font-size:60px;
+}
+
+
+
+.overlayOuter{
+    background:#000;
+    opacity:0.7;
+    display:none;
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:100001;
+ }
+
+
+.overlayInner{
+
+    position:absolute;
+    top:40%;/*or whatever*/
+    left:40% /*or whatever*/
+    width:500px;
+    z-index:100001;
+ }
+

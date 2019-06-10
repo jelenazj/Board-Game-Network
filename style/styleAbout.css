@@ -1,0 +1,273 @@
+
+    body {
+      background: #fcfcfc;
+      height: 130vh;
+    }
+
+    /* Za kocku navigacija */  
+
+
+.containers
+{
+  width:450px;
+  height:100%;
+  margin-left:10px;
+    
+}
+
+.pic
+{
+   
+    box-shadow: 6px 6px 7px #888888;
+    width:250px;
+    height:220px;
+    position: relative;
+    overflow: hidden;
+    margin-top:150px;
+    margin-left:135px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 1px 494px;
+}
+.pic:before
+{
+  content: '';
+  margin-top:-73px;
+  margin-left:-80px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.pic:hover , .box1:hover , .box2:hover , .social1:hover , .social2:hover , .social3:hover 
+{
+  box-shadow: 3px 3px 7px #888888;
+  cursor:pointer;
+}
+
+.box1
+{
+  
+  box-shadow: 6px 6px 7px #888888;
+  width:100px;
+  height:100px;
+  position: relative;
+  overflow: hidden;
+  margin-top:-124px;
+  margin-left:375px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.box1:before
+{
+  content: '';
+  margin-top:-25px;
+  margin-left:-31px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url('http://creek.themebucket.net/wp-content/uploads/2015/09/8.jpg') center center;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.box2
+{
+  box-shadow: 6px 6px 7px #888888;
+  position: relative;
+  overflow: hidden;
+  width:180px;
+  height:99px;
+  margin-top: 14px;
+  margin-left: 439px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.box2:before
+{
+  
+  content: '';
+  margin-top:-74px;
+  margin-left:-31px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url('../img/lokacija.png');
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.proba1 {
+  color: white;
+  transform: rotate(-45deg);
+  font-size: 40px;
+  height: 40px;
+}
+
+.proba2 {
+  color: white;
+  transform: rotate(-45deg);
+  font-size: 40px;
+  height: 40px;
+  padding: 23px 21px;
+}
+
+.social1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 7px #888888;
+  width: 80px;
+  height: 80px;
+  background-color:#2db7e0;
+  margin-top: -90px;
+  margin-left: 667px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.social1 > i
+{
+  font-size:60px;
+  margin-top:13px;
+  margin-left:20px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+.social2
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background-color:#C73B6F;
+  margin-top:-142px;
+  margin-left:729px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social2 > i
+{
+  font-size:60px;
+  margin-top:8px;
+  margin-left:13px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+    /* kraj navigacije */
+
+    .tittle {
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 4px;
+      overflow: hidden;
+      background: linear-gradient(90deg, rgb(214, 114, 20), #fff, rgb(235, 92, 48));
+      background-repeat: no-repeat;
+      background-size: 60%;
+      animation: animate 2s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      z-index: -1;  
+
+    }
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
+    }
+      
+    .name-txt {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      font-size: 20px;
+      color: orange;
+      text-shadow: 1px 2px rgb(10, 9, 8);
+    }
+
+    .about-bootStorm {
+      margin-top: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      font-size: 30px;
+      text-shadow: 1px 2px rgb(10, 9, 8);
+      color: orange;
+    }
+
+    .persons-container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    .person {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex: 1;
+      padding: 0 30px;
+    }
+
+    .person-inside {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,.2);
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .person-img {
+      display: block;
+    }
+
+    .person-img img {
+      max-width: 100%;
+      border-radius: 100%;
+      display: block;
+    }
+
+    .name {
+      font-size: 25px;
+      text-shadow: 1px 2px rgb(10, 9, 8);
+      color: orange;
+    }
+
+    .person-txt {
+      display: none;
+    }
+    
+    .person-inside:hover .person-txt {
+      display: block;
+    }
+      h1{
+          font-size: 40px;
+          margin-top: 50px;
+      }
+
+ 

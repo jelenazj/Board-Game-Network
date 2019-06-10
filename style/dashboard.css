@@ -1,0 +1,440 @@
+#dashBody, #wallBody, html {
+	background-color: #E3DFDC;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+#dashNav {
+	padding-left: 8.75rem;
+	padding-right: 8.75rem;
+	background-image: linear-gradient(90deg, #FFFFFF, #959595);
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 9px 10px 57px -27px rgba(0,0,0,0.85);
+	min-height: 70px;
+}
+
+#logoContainer {
+	display: flex;
+	align-items: center;
+}
+
+#dashLogo {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.dashHeadProfImg {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.dashHeadRight {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-self: center;
+	
+}
+
+.dashProfImg {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+}
+.commProfImg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+#privacy {
+	height: 2em;	
+}
+
+.dashLink {
+	align-self: center;
+	justify-content: center;
+	text-decoration: none;
+    font-size: 20px;
+}
+
+.dashPosts a.dashLink {
+	font-weight: bolder;
+	color: #A7A7A7;
+	text-decoration: none;
+}
+.dashPosts .dashLink:hover {
+	color: orange;
+}
+
+#dashMainContainer {
+	display: grid;
+	grid-template-columns: 25% auto 25%;
+	grid-gap: 1.5rem;
+}
+
+.dashLeft {
+	margin-top: 1.5rem;
+	margin-left:  8.75rem;	
+}
+
+.dashRight {
+	margin-top: 1.5rem;
+	margin-right:  8.75rem;
+}
+
+.dashCenter {
+	margin-top: 1.5rem;
+}
+
+.dashLeft, .dashRight {
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	display: flex;
+	padding: 10px;
+	margin-bottom: 20px;
+	height: fit-content;
+    max-height: 100%;
+	box-shadow: 9px 10px 57px -27px rgba(0,0,0,0.85);
+}
+/* stil za levi div*/
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.leviKlik {
+	background:linear-gradient(to right, #ee801e, #e75b10);
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	color:#ffffff;
+	font-size:17px;
+	padding:10px 12px;
+	text-decoration:none;
+	border: none;	
+}
+.leviKlik:hover {
+	background:linear-gradient(to left, #ee801e 5%, #e75b10 100%);
+}
+.leviKlik:active {
+	position:relative;
+	top:1px;
+}
+.linkovi {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.textRight{
+   font-size: 20px;
+}
+.stilCommImg{
+    margin-left: 50px;
+    width: 50px;
+}
+
+.item1 {grid-area: profImg;}
+.item2 {grid-area: input;}
+.item3 {grid-area: insImage;}
+
+
+.sendPost {
+	display: grid;
+	grid-template-areas:
+'profImg input input input input input'
+'profImg insImage . . . .';
+	grid-gap: 10px;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	box-shadow: 9px 10px 57px -27px rgba(0,0,0,0.85);
+}
+
+.item1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+
+.item2 {
+	margin-bottom: 10px;
+}
+
+.inputField {
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	border: 2px solid #f0f0f0;
+	padding: 5px;
+}
+
+.inputFieldComment {
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	border: 2px solid #f0f0f0;
+	padding: 5px;
+}
+
+/*.item3 input {
+	border-radius: 10px;
+	border: none;
+	padding: 5px;
+}*/
+
+.postSubmit {
+	background:linear-gradient(to right, #ee801e, #e75b10);
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:10px 12px;
+	text-decoration:none;
+	border: none;
+	
+}
+.postSubmit:hover {
+	background:linear-gradient(to left, #ee801e 5%, #e75b10 100%);
+}
+.postSubmit:active {
+	position:relative;
+	top:1px;
+}
+.dashInsertComment img {
+	padding: 10px;
+}
+
+.dashPosts {
+    color: black;
+	background-color: #FFF;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 120px 1fr;
+	font-size: 1em;
+	padding: 10px;
+	box-shadow: 9px 10px 57px -27px rgba(0,0,0,0.85);
+}
+
+.dashLike, .dashLikeC {
+	width: 3rem;
+	font-size: 20px;
+	margin-right: 10px;
+	border: 1px solid white;
+	background-color: white;
+}
+
+.dashLike:hover {
+	background-color: #d0d0d0;
+	
+}
+
+.delEdit {
+	display: flex;
+}
+
+.popup {
+	background-color: red;
+	position: relative;
+	display: inline-block;
+}
+
+.popup .popuptext {
+	width: 200px;
+	text-align: center;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	padding: 10px;
+	position: absolute;
+	z-index: 1;
+	bottom: 75%;
+	left: 50%;
+}
+
+.yesno {
+	display: flex;
+	justify-content: space-around;
+}
+
+.postSubmit {
+
+}
+
+@media screen and (max-width: 600px) {
+  .dashPosts {
+    font-size: 40px;
+  }
+  .dashLeft, .dashRight {
+  	display: none;
+  }
+
+}
+.postImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.postImg:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.skroler{
+    height: 200px;
+    overflow: scroll;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.containerComm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    width: 100%;
+}
+.contImg{
+    width: 100%;
+    height: 100%;
+
+}
+.commentar{
+    background-color: gray;
+    padding-left: 20px;
+}
+.commProfImg{
+    width: 35px;
+    height: 35px;
+}
+
+#popup { 
+	display: none;
+    box-shadow: 9px 10px 57px -27px rgba(0,0,0,0.85);
+	width: 400px; height: 200px; 
+	top:25%; left:25%;
+	background-color: white;
+	z-index: 10;
+	padding: 2em;
+	position: fixed;
+}
+
+.darken { 
+	background: rgba(0, 0, 0, 0.7);
+}
+
+#iframe { 
+	border: 0;
+}
+
+html, body, #page { 
+	height: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.closeedit {
+    width: 100%;
+    height: 100%;
+    color: grey;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: right;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
